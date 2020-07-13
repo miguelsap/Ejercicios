@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background-color: #01e37f;
+  font-family: "Roboto", sans-serif;
+}
+.card {
+  width: 785px;
+  height: 600px;
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 10px;
+  position: relative;
+}
+.card__image {
+  width: 350px;
+  height: 550px;
+  border-radius: 10px;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  box-shadow: #e2e2e2 0px 0px 20px;
+  display: inline;
+}
+.image__background {
+  background: -webkit-radial-gradient(center, circle, #a5ee07, #d3f87e);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 80%;
+  position: relative;
+}
+.image__background img {
+  position: absolute;
+  top: 70px;
+  left: 25px;
+}
+.image__items {
+  height: 20%;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding-top: 20px;
+}
+.image__items img {
+  width: 70px;
+  padding: 10px;
+  border: 2px solid #e2e2e2;
+}
+.card__info {
+  padding: 10px;
+  width: 350px;
+  height: 550px;
+  position: absolute;
+  left: 410px;
+  top: 25px;
+}
+.card__title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4c4d4c;
+}
+.card__cod {
+  color: #b5b3b2;
+  font-size: 14px;
+}
+.card__price {
+  color: #ff3e3f;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.card__price span {
+  font-size: 18px;
+}
+.info__items {
+  /* text-align: center; */
+}
+.info__items img {
+  width: 40px;
+  padding: 3px;
+  margin-bottom: 30px;
+}
+.info__items img:first-child {
+  border: 2px solid #e2e2e2;
+}
+ul {
+  margin-top: 8px;
+}
+ul li {
+  color: #4c4d4c;
+}
+button {
+  margin-top: 40px;
+  background-color: #ff3e3f;
+  color: white;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: #e2e2e2 0px 0px 20px;
+  outline: none;
+  cursor: pointer;
+}
+.card__heart {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.card__share {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.image__items img {
+  cursor: pointer;
+}
+.info__items img {
+  cursor: pointer;
+}
+i {
+  cursor: pointer;
+}

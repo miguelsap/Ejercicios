@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+:root {
+  --color-primary: #48aaff;
+  --color-title: #8a8089;
+  --color-separation: #e3f2ff;
+  --color-subtitle: #2283fd;
+  --color-price: #016ff9;
+  --color-border-buttom: #9fd2ff;
+  --color-backgroun-buttom: #e1f1ff;
+  --color-buttom: #568ffe;
+}
+body {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.head {
+  background-color: var(--color-primary);
+  height: 350px;
+}
+.cards {
+  width: 1000px;
+  height: 650px;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  left: 457.5px;
+  border-radius: 15px;
+  border: 1px solid #dcdcdc;
+  z-index: 1;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+.border {
+  width: 1000px;
+  height: 325px;
+  background-color: red;
+  position: absolute;
+  left: 457.5px;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 5px 10px #eee, 5px 0 10px #eee, -5px 0 10px #eee;
+}
+.card {
+  width: 330px;
+  height: 650px;
+  display: inline-block;
+  overflow: hidden;
+  border-left: 1px solid var(--color-separation);
+}
+.card__icono {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+.icono__size {
+  width: 90px;
+}
+.info__title {
+  color: var(--color-title);
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+.card__horizontal {
+  border: 1px solid var(--color-separation);
+  width: 210px;
+  margin: auto;
+}
+.info__subtitle {
+  color: var(--color-subtitle);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.card__price {
+  color: var(--color-price);
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+.card__buttom {
+  border-radius: 10px;
+  padding: 15px 35px;
+  font-size: 18px;
+  border: 1px solid var(--color-border-buttom);
+  background-color: var(--color-backgroun-buttom);
+  color: var(--color-buttom);
+}
+.card__buttom:hover {
+  background-color: var(--color-primary);
+  cursor: pointer;
+  color: white;
+}
+.card:hover .card__icono img {
+  transition: all 1s ease-in;
+  transform: rotate(360deg);
+}
+.card__free {
+  background-color: white;
+}
